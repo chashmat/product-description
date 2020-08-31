@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product detail page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+</head>
+<body>
+    <div class="content">
+        <div class="img">
+            <div class="img-prew">
+                <div class="main-prew">
+                    <img src="images/w1.jpg" class="main">
+                    <section class="hover"><i class="far fa-dot-circle"></i> Hover to zoom</section>
+                    <section class="click"><i class="fas fa-mouse"></i> Click to expand</section>
+                </div>
+                <div id="small">
+                    <div class="small">
+                        <img src="images/w1.jpg" class="selected" onclick="select(1)">
+                        <img src="images/w2.jpg" onclick="select(2)">
+                        <img src="images/w11.jpg" onclick="select(3)">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="name-of-suit">
+                <h1>bonanza lawn 2020</h1>
+                <h3>pkr 
+                    <span>1,320.00</span>
+                </h3>
+                <h4 id="stock">blu: k-19473 b 
+                    <span class="stock">in stock</span>
+                </h4>
+                <hr>
+                <div class="sew">
+                    <h2>sew my dress <span>+pkr 1,250.00</span></h2>
+                    <span onclick="sew()">
+                        <i class="fa fa-times"></i>
+                    </span>
+                </div>
+                <h4 class="itemsLeft">
+                    <span>5</span>
+                    Item(s) Left
+                </h4>
+                <div class="cartQty">
+                    <div class="qty">
+                        <button>+</button>
+                        <span>0</span>
+                        <button>-</button>
+                    </div>
+                    <button class="cart">add to cart 
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+                <div class="share">
+                    <h3>Share: 
+                        <i class="fab fa-facebook-f facebook"></i>
+                        <i class="fab fa-twitter twitter"></i>
+                        <i class="fab fa-pinterest-p pintrest"></i>
+                        <i class="fab fa-google-plus-g googlePlus"></i>
+                    </h3>
+                </div>
+                <div class="desc">
+                    <h3>
+                        <span>prouduct description</span>
+                        additional information
+                    </h3>
+                    <h4>
+                        3M Digtal Printed embroided Lawn Shirt
+                        <br>
+                        (Actual fabric might differ slightly from the picture.)
+                    </h4>
+                </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
